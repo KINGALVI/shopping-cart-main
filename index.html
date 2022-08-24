@@ -9,6 +9,7 @@
          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
       <link href="style.css" rel="stylesheet">
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    </head>
 
    <body class="bg-dark color-white">
@@ -26,11 +27,11 @@
 
                         <div class="col-md-5 center-item">
                            <div class="input-group number-spinner">
-                              <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                              <input type="number" min="0" class="form-control text-center" value="1">
-                              <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                              <button id="phone-btn-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                              <input id="phone-number-field" type="number" min="0" class="form-control text-center" value="1">
+                              <button id="phone-btn-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
                            </div>
-                           <h5>$1219</h5>
+                           <h5>$ <span id="phone-case-total">1219</span></h5>
                            <img src="images/remove.png" alt="" class="remove-item">
                         </div>
                      </div>
@@ -50,7 +51,7 @@
                               <button id="btn-case-plush" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                            </div>
-                           <h5>$59</h5>
+                           <h5>$ <span id="Case-Total">59</span></h5>
                            <img src="images/remove.png" alt="" class="remove-item">
                         </div>
                      </div>
